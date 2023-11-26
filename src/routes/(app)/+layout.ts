@@ -4,7 +4,7 @@ import { getSupabase } from '@supabase/auth-helpers-sveltekit';
 import { redirect } from '@sveltejs/kit';
 
 export const ssr = false;
-export const prerender = false;
+
 
 
 
@@ -14,5 +14,6 @@ export const load: LayoutLoad = async (event) => {
 	if (!session) {
 		throw redirect(303, '/login');
 	}
+	
 	return { session };
 };
