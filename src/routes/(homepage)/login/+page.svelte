@@ -49,12 +49,13 @@
 			);
 
 			goto('/app');
+			goto('/app');
 		} catch (error) {
 			showError(error);
-			goto('/app');
+
 		} finally {
 			loadingGoogle = false;
-			goto('/app');
+
 		}
 	}
 </script>
