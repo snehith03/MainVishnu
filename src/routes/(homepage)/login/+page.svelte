@@ -48,7 +48,8 @@
 				})
 			);
 
-
+			goto('/app');
+			
 		} catch (error) {
 			showError(error);
 

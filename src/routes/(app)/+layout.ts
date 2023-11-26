@@ -10,9 +10,7 @@ export const load: LayoutLoad = async (event) => {
 	if (!session) {
 		throw redirect(303, '/login');
 	}
-	else if(session){
-		throw redirect(303, '/app');
-	}
+
 
 
 	return { session };
