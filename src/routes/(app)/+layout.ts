@@ -12,7 +12,7 @@ export const prerender = true;
 export const load: LayoutLoad = async (event) => {
 	const { session } = await getSupabase(event);
 	if (!session) {
-		throw redirect(303, '/app');
+		throw redirect(303, '/login');
 	}
 	return { session };
 };
